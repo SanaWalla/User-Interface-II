@@ -41,12 +41,16 @@ nav {
     font-size: 1rem;
     letter-spacing: 3px;
     text-decoration: none;
-    padding: 1rem 2rem; 
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
     background-color: #fec89a;
     color:white;
     font-weight: 900;
     transition: background-color 200ms ease-in-out;
     border: 1px solid #f9dcc4;
+    width: 8rem;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .nav:hover {
@@ -76,16 +80,18 @@ p {
 }
 
 .mainimage {
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 960px;
     margin: 0;
 }
 
 .sand {
-    width: 100%;
     display: block;
-    margin-top: -30%;
-    margin-bottom: -80%;
+    /* margin-top: -30%;
+    margin-bottom: -80%; */
+    width: 100%;
+    max-width: 960px;
+    height: auto;
 }
 
 /* ul {
@@ -108,7 +114,7 @@ li {
 } */
 
 
-.images {
+.projectsection {
     display: flex;
     justify-content: left;
     margin-top: 3rem;
@@ -136,13 +142,13 @@ li {
 
 footer {
     background-color: #fcd5ce;
-    height: 150px;
-    width: 100%;
-    margin-top: 40px;
+    height: 5rem;
+    width: 960px;
+    position: fixed;
+    bottom: 0; 
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .footerbutton {
@@ -161,4 +167,27 @@ footer {
 
 .footerbutton:hover {
     background-color: #E4B48A;
+}
+
+
+@media (max-width: 500px){
+ nav{
+     flex-wrap: wrap;
+     flex-direction: column;
+ }
+ .projectsection{
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .image{
+     width: 40%;
+     padding-bottom: 2rem;
+ }
+ .image:last-child{
+     width: 70%;
+     padding-top: 2rem;
+     /* padding-bottom: 4rem; */
+ }
+
 }
