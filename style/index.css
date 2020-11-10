@@ -18,6 +18,11 @@ body {
      margin: 0 auto;
 }
 
+img {
+    height: auto;
+    max-width: 100%;
+}
+
 h1 {
     font-size: 5rem;
     letter-spacing: 8px;
@@ -80,18 +85,13 @@ p {
 }
 
 .mainimage {
-    /* overflow: hidden; */
-    width: 960px;
-    margin: 0;
+    /* width: 960px; */
 }
 
 .sand {
     display: block;
-    /* margin-top: -30%;
-    margin-bottom: -80%; */
-    width: 100%;
-    max-width: 960px;
     height: auto;
+    max-width: 100%;
 }
 
 /* ul {
